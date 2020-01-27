@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Session 18 => j.q </title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!------------------------ Open & Close Nav-Bar ------------------------------->
+  <div class="side-menu py-4 px-2">
+    <div>
+      <i class="fab fa-accusoft fa-2x"></i>
+    </div>
+    <div class="open-icon">
+      <i class="fas fa-align-justify fa-2x"></i>
+    </div>
+    <div>
+      <i class="fas fa-globe d-block pb-3"></i>
+      <i class="fas fa-share-alt"></i>
+    </div>
+  </div>
+
+  <!------------------------ Nav-Bar ------------------------------->
+  <div class="nav-menu p-4 translate">
+    <div class="h-100 d-flex flex-column justify-content-between">
+      <div class="nav-ul">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#">Now playing</a>
+          </li>
+          <li>
+            <a href="#">Popular</a>
+          </li>
+          <li>
+            <a href="#">Top Rated</a>
+          </li>
+          <li>
+            <a href="#">Trending</a>
+          </li>
+          <li>
+            <a href="#">Upcoming</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="icon">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-globe"></i></a>
+
+        <div class="pt-3">
+          <p class="text-muted">Copyright Â&copy; 2019 All Rights <br> Reserved.</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!------------------------ API ------------------------------->
+  <div class="container">
+    <div class="row" id="row-data">
+    </div>
+    <!------------------------ Form ------------------------------->
+    <form class="mt-5">
+      <h2 class="pb-4">Contact Us..</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <input id="theName" type="text" class="form-control" placeholder="Enter Your Name">
+          <div id="alertName" class="alert alert-danger" role="alert">
+            Your Name is not valid
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="theEmail" type="email" class="form-control" placeholder="Enter Email" required>
+          <div id="alertEmail" class="alert alert-danger" role="alert">
+            Your Email is not valid
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="thePhone" type="text" class="form-control" placeholder="Enter Phone">
+          <div id="alertPhone" class="alert alert-danger" role="alert">
+            Your Phone Number is not valid
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="theAge" type="text" class="form-control" placeholder="Enter Age">
+          <div id="alertAge" class="alert alert-danger" role="alert">
+            Your Age is not valid
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="ThePass" type="password" class="form-control" placeholder="Enter Password">
+          <div id="alertPass" class="alert alert-danger" role="alert">
+            entre valid password *Minimum eight characters, at least one letter and one number:*
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input id="TheRePass" type="password" class="form-control" placeholder="Enter RePassword">
+          <div id="alertRePass" class="alert alert-danger" role="alert">
+            The RePassword Must Be The Same Of The Password
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-outline-danger " id="sub-btn" disabled=true>Submit</button>
+    </form>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
